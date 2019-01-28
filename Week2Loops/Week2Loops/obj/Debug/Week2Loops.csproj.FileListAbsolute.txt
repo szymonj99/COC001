@@ -1,0 +1,7 @@
+C:\Users\Szymon\Desktop\CSharp\Week2Loops\Week2Loops\bin\Debug\Week2Loops.exe.config
+C:\Users\Szymon\Desktop\CSharp\Week2Loops\Week2Loops\bin\Debug\Week2Loops.exe
+C:\Users\Szymon\Desktop\CSharp\Week2Loops\Week2Loops\bin\Debug\Week2Loops.pdb
+C:\Users\Szymon\Desktop\CSharp\Week2Loops\Week2Loops\obj\Debug\Week2Loops.csprojAssemblyReference.cache
+C:\Users\Szymon\Desktop\CSharp\Week2Loops\Week2Loops\obj\Debug\Week2Loops.csproj.CoreCompileInputs.cache
+C:\Users\Szymon\Desktop\CSharp\Week2Loops\Week2Loops\obj\Debug\Week2Loops.exe
+C:\Users\Szymon\Desktop\CSharp\Week2Loops\Week2Loops\obj\Debug\Week2Loops.pdb
