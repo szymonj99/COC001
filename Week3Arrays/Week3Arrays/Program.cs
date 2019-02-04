@@ -10,6 +10,7 @@ namespace Week3Arrays
     {
         static void Main()
         {
+            //Basic exercise
             const int ARRAYLENGTH = 4; //Declare constant of array length.
             string[] myAnimals; //Declare string array
             myAnimals = new string[ARRAYLENGTH]; //Array of length 4
@@ -52,6 +53,64 @@ namespace Week3Arrays
                 intArray[i] = ((i + 1) * 2); //Change values of array to 2 * (index + 1)
                 Console.WriteLine(intArray[i]);
             }
+
+            Console.ReadLine();
+
+            //Advanced exercise
+            //2D Arrays
+            const int ROW = 3;
+            const int COLUMN = 3;
+
+            int[,] myArray = new int[ROW, COLUMN]; //New 2D array.
+
+            for (int i = 0; i < COLUMN; i++) //Create grid of ROW x COLUMN.
+            {
+                for (int j = 0; j < ROW; j++)
+                {
+                    Console.Write((i + 1) * (j + 1) + " ");
+                }
+                Console.WriteLine();
+            }
+
+            /*
+             * Sample output:
+             * 1 2 3
+             * 2 4 6
+             * 3 6 9
+             */
+
+            Console.ReadLine();
+            List<int> myList = new List<int>(); //Make new list
+            Random rndInt = new Random(); //initialise rndInt as new Random() method
+            for (int k = 0; k < 17; k++)
+            {
+                myList.Add(rndInt.Next(1,101)); //New random number from 1-100 
+            }
+
+            myList.ForEach(Console.WriteLine); //Prints out every element in list.
+
+            myList.RemoveAt(4); //Removes 5th element
+
+            myList.ForEach(Console.WriteLine); //Print out every element in list.
+
+            int highestInt = 0; //Initialize highestInt variable.
+
+            foreach (int i in myList) //Evaluate each int in list myList.
+            {
+                if (i > highestInt)
+                {
+                    highestInt = i; //Iterate through each integer. Set highest number as highestInt
+                }
+            }
+            Console.WriteLine("Highest int in list is {0}", highestInt); //Print out highest int from list.
+
+            int highestIntIndex; //initialise highestIntIndex int
+
+            highestIntIndex = myList.IndexOf(highestInt); //Set variable to index of highest number in list.
+
+            myList.RemoveAt(highestIntIndex); //Remove integer at index of highestIntIndex
+
+            myList.ForEach(Console.WriteLine); //Print out all values of myList.
 
             Console.ReadLine();
         }
