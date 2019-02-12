@@ -33,7 +33,6 @@ namespace Week4MoreMethods
             Console.WriteLine(myArray[4]);
             Console.WriteLine(myArray[9]);
             Console.ReadLine();
-
             int iArrayTotal = 0;
             int iArrayHighest = 0;
             int iArrayLowest = int.MaxValue;
@@ -52,12 +51,12 @@ namespace Week4MoreMethods
                 }
             }
             Console.WriteLine();
-            int iArrayAverage = iArrayTotal / (myArray.Length + 1);
-            Console.WriteLine("Amount of values in array: {0}", myArray.Length + 1);
+            double dArrayAverage = iArrayTotal / (myArray.Length);
+            Console.WriteLine("Amount of values in array: {0}", myArray.Length);
             Console.WriteLine("Array Highest: {0}", iArrayHighest);
             Console.WriteLine("Array Lowest: {0}", iArrayLowest);
             Console.WriteLine("Array total: {0}", iArrayTotal);
-            Console.WriteLine("Array average: {0}", iArrayAverage);
+            Console.WriteLine("Array average: {0}", dArrayAverage);
             Console.ReadLine();
         }
 
